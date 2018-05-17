@@ -9,7 +9,10 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-arrow: "\EA01";
+$icon-calendar-copy: "\EA02";
+$icon-check: "\EA03";
+$icon-play: "\EA04";
 
 
 %icon {
@@ -28,4 +31,7 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
-.icon-facebook:before { content: $icon-facebook; }
+.icon-arrow:before { content: $icon-arrow; }
+.icon-calendar-copy:before { content: $icon-calendar-copy; }
+.icon-check:before { content: $icon-check; }
+.icon-play:before { content: $icon-play; }

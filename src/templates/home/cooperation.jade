@@ -1,0 +1,32 @@
+section.cooperation
+  .container
+    .cooperation__content
+      .row
+        .col-xs-12
+          h2 Начните выгодное и надёжное сотрудничество с нами
+          form.form
+            .form__line 
+              .form__line__input
+                input(type="text" id="text" required)
+                label(for="text") Ваше имя*
+              .form__line__input
+                input(type="email" id="email" required)
+                label(for="email") Корпоративная почта*
+            .form__line
+              .form__line__input
+                input(type="tel" id="tel" required)
+                label(for="tel") Рабочий телефон
+              .form__line__file
+                input(type="file" name="description" id="file" placeholder="Прикрепить логотип")
+                label(for="file") Загрузите не более 3 файлов <br>общим размером до 60 МБ
+            .form__line
+              .form__line__input.last
+                input(type="text" id="text1" required)
+                label(for="text1") Название компании
+            .form__textarea
+              textarea(id="textarea")
+              label(for="textarea") Текст сообщения
+            .form__checkbox
+              input(type="checkbox" id="checkbox")
+              label(for="checkbox") Нажимая кнопку «Отправить», я даю своё согласие на обработку <span>персональных данных.</span>
+            input(type="submit" value="Отправить").btn.btn--cooperation
