@@ -7,7 +7,7 @@ import './import/rangeslider.js';
 //menu-open
 $('.menu-open, .pop-up ul a').on('click', function() {
   $('.pop-up').fadeToggle();
-  $('.header__logo').fadeToggle();
+  $('.header__logo').fadeIn();
   $('.menu-open').toggleClass('active');
   $('body').toggleClass('modal');
 });
