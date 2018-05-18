@@ -6,7 +6,7 @@ google.maps.event.addDomListener(window, 'load', init);
 function init() {
   var coordinates = {lat: 59.631558, lng: 33.525350};
   var mapOptions = {
-    zoom: 17.5,
+    zoom: 16,
     center: coordinates,
   };
   
