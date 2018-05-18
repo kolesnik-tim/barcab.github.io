@@ -12,7 +12,9 @@
 $icon-arrow: "\EA01";
 $icon-calendar-copy: "\EA02";
 $icon-check: "\EA03";
-$icon-play: "\EA04";
+$icon-pin: "\EA04";
+$icon-play: "\EA05";
+$icon-up: "\EA06";
 
 
 %icon {
@@ -34,4 +36,6 @@ $icon-play: "\EA04";
 .icon-arrow:before { content: $icon-arrow; }
 .icon-calendar-copy:before { content: $icon-calendar-copy; }
 .icon-check:before { content: $icon-check; }
+.icon-pin:before { content: $icon-pin; }
 .icon-play:before { content: $icon-play; }
+.icon-up:before { content: $icon-up; }

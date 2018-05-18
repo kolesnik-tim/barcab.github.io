@@ -1,2 +1,107 @@
 .geography
-  
+  position: relative
+  padding-bottom: 70px
+  &__map
+    position: relative
+    img
+      width: 1160px
+  &__block
+    position: absolute
+    &:hover
+      .pin
+        background: url(../img/pin-on-mouse.svg)
+      .geography__block__text
+        visibility: visible
+    .pin
+      width: 30px
+      height: 37px
+      background: url(../img/pin.svg)
+      background-size: contain
+      transition: all 0.3s
+      position: relative
+      z-index: 7
+    &__text
+      visibility: hidden
+      position: absolute
+      left: 15px
+      top: 50px
+      width: 370px
+      padding: 20px
+      border-radius: 9px
+      background-color: $white
+      box-shadow: 0 5px 10px 0 rgba(138, 1, 14, 0.15)
+      z-index: 8
+      h4
+        font-size: 30px
+        font-weight: bold
+        color: $crimson
+        margin-bottom: 10px
+        text-align: left
+      p
+        font-size: 18px
+        line-height: 1.33
+        color: $brownish-grey
+        text-align: left
+    &.peru
+      bottom: 175px
+      left: 25%
+    &.bulgaria
+      left: 48%
+      top: 158px
+    &.slovakia
+      left: 51%
+      top: 172px
+    &.croatia
+      left: 53.5%
+      top: 189px
+    &.norway
+      left: 48.7%
+      top: 109px
+    &.finland
+      left: 53.4%
+      top: 100px
+    &.kyrgyzstan
+      left: 54%
+      top: 142px
+    &.belarus
+      left: 64.5%
+      top: 168px
+    &.kazakhstan
+      left: 67%
+      top: 192px
+    &.blagoveshchensk
+      right: 20%
+      top: 100px
+      .geography__block__text
+        right: 15px
+        left: auto
+    &.peaceful
+      right: 15.5%
+      top: 150px
+      .geography__block__text
+        right: 15px
+        left: auto
+    &.vladivostok
+      right: 14%
+      top: 182px
+      .geography__block__text
+        right: 15px
+        left: auto
+    &.sakhalin
+      right: 11.3%
+      top: 157px
+      .geography__block__text
+        right: 15px
+        left: auto
+    &.magadan
+      right: 6.5%
+      top: 102px
+      .geography__block__text
+        right: 15px
+        left: auto
+    &.petropavlovsk
+      right: 7.3%
+      top: 142px
+      .geography__block__text
+        right: 15px
+        left: auto

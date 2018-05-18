@@ -2,7 +2,7 @@
   background: $off-white
   padding-bottom: 50px
   &__info
-    max-width: 780px
+    max-width: 800px
     position: relative
     left: 50%
     transform: translate(-50%)
@@ -11,3 +11,108 @@
       line-height: 1.2
       color: $brownish-grey
       margin-bottom: 50px
+  &__truck
+    background: url('../img/page-1.png') no-repeat
+    background-size: contain
+    background-position: 50% 50%
+    width: 100vw
+    img
+      width: 1160px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    &__block
+      position: absolute
+      &:hover
+        span
+          background: url('../img/page-1.svg')
+          background-size: contain
+          background-repeat: no-repeat
+        .delivery__truck__block__text
+          visibility: visible
+      span
+        font-size: 25px
+        font-weight: bold
+        color: $crimson
+        transition: all 0.3s
+        width: 110px
+        height: 102px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+      &__text
+        visibility: hidden
+        position: absolute
+        left: 50px
+        top: 110px
+        width: 310px
+        padding: 20px
+        border-radius: 9px
+        background-color: $white
+        box-shadow: 0 5px 10px 0 rgba(138, 1, 14, 0.15)
+        z-index: 8
+        h4
+          font-size: 26px
+          font-weight: bold
+          color: $crimson
+          margin-bottom: 10px
+          text-align: left
+        p
+          font-size: 16px
+          line-height: 1.33
+          color: $brownish-grey
+          text-align: left
+      &.number-20
+        bottom: 125px
+        left: 21.2%
+      &.number-8
+        bottom: 206px
+        left: 26.75%
+      &.number-22
+        bottom: 125px
+        left: 32.2%
+      &.number-10
+        bottom: 206px
+        left: 37.7%
+      &.number-25
+        bottom: 125px
+        left: 43.2%
+      &.number-12
+        bottom: 206px
+        left: 48.7%
+      &.number-28
+        bottom: 125px
+        left: 54.2%
+      &.number-14
+        bottom: 206px
+        right: 30.9%
+      &.number-30
+        bottom: 125px
+        right: 25.5%
+        .delivery__truck__block__text
+          left: auto
+          right: 50px
+      &.number-16
+        bottom: 206px
+        right: 19.9%
+        .delivery__truck__block__text
+          left: auto
+          right: 50px
+      &.number-325
+        bottom: 125px
+        right: 14.45%
+        .delivery__truck__block__text
+          left: auto
+          right: 50px
+      &.number-18
+        bottom: 206px
+        right: 9%
+        .delivery__truck__block__text
+          left: auto
+          right: 50px
+      &.number-33
+        bottom: 125px
+        right: 3.5%
+        .delivery__truck__block__text
+          left: auto
+          right: 50px

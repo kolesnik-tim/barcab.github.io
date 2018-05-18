@@ -1,5 +1,6 @@
 .footer
   background-color: $brownish-grey
+  position: relative
   &__content
     padding: 50px 60px
   &__confidentiality
@@ -31,6 +32,15 @@
         letter-spacing: 0.5px
         text-align: right
         padding-bottom: 5px
-
-
-      
+  .up
+    position: absolute
+    right: 0
+    top: 36%
+    transform: translate(-50%) 
+    opacity: 0.3
+    transition: all 0.3s
+    &:hover
+      opacity: 1 
+    i
+      font-size: 35px
+      color: $pale-gold-two
