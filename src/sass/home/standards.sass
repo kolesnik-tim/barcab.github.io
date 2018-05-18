@@ -9,9 +9,33 @@
     height: 100%
     &__range
       position: relative
+      width: 50px
+      height: 100%
       input[type="range"]
         width: 100% !important
+      .rangeslider
+        border-radius: 3px
+        background: $brownish-grey
+        width: 4px
+        height: 100%
+      .rangeslider__fill
+        border-radius: 3px
+        background: $pale-gold
+        height: 100%
+      .rangeslider__handle
+        width: 30px 
+        height: 10px
+        border-radius: 3px
+        background: $pale-gold
+        box-shadow: 0 2px 4px 0 rgba(138, 1, 14, 0.15)
+        border: none
+        left: -13px
+      .rangeslider__handle:after
+        display: none
     &__info
+      max-width: 280px
+      width: 100%
+      margin-left: 50px
       h4
         font-family: 'OfficinaSansC'
         font-size: 30px
@@ -25,16 +49,20 @@
         span
           color: $crimson
   &__img
-    margin-left: 70px
+    margin-left: 80px
     img
       height: 360px
       &:last-child
         height: 190px
         margin-left: 50px
   &__description
+    display: flex
+    flex-direction: column
+    align-items: center
     p
       font-size: 30px
       line-height: 1.2
       text-align: center
       color: $brownish-grey
       margin-bottom: 50px
+      max-width: 970px
