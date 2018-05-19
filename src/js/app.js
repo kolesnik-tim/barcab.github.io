@@ -22,7 +22,7 @@ $(window).scroll(function() {
     $('.header__logo').fadeOut();
   }
 });
-
+//якаря
 $('#menu1, #menu').on('click','a', function(event) {
   event.preventDefault();
   var id  = $(this).attr('href'),
