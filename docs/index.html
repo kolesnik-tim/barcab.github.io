@@ -30,14 +30,15 @@
       </header>
       <!--END header-->
       <section id="intro" class="intro">
-        <div class="container">
+        <div id="trigger22" class="container">
           <div class="row center-xs">
             <div class="col-xs-12">
               <div class="intro__logo"><img src="img/logo.svg" alt=""></div>
             </div>
             <div class="col-md-10 col-xs-12">
               <h1>Производство деревянных барабанов</h1>
-              <p>Более 10 лет персонал предприятия <b>БАРКАБ</b> специализируется на изготовлении данного вида деревянной тары.</p><a href="#" class="btn">Смотреть презентацию<i class="icon icon-play"></i></a><span>Длительность 90 секунд</span></div>
+              <p>Более 10 лет персонал предприятия <b>БАРКАБ</b> специализируется на изготовлении данного вида деревянной тары.</p><a href="#pop-up__video" pop-up__video="https://www.youtube.com/embed/pUo026JfQpM?list=RDmBbntUkVoBI&amp;amp;ecver=2" data-pop
+                class="btn">Смотреть презентацию<i class="icon icon-play"></i></a><span>Длительность 90 секунд</span></div>
           </div>
         </div>
       </section>
@@ -52,7 +53,7 @@
               <div class="status__block">
                 <div class="row middle-xs">
                   <div class="col-xs-2 end-xs"><b>Более</b></div>
-                  <div class="col-xs-7"><span>10 000</span></div>
+                  <div class="col-xs-7"><span id="progress">10 000</span></div>
                   <div class="col-xs-3"><img src="img/o.svg"></div>
                 </div>
                 <p>комплектов и собранных барабанов в год</p>
@@ -75,7 +76,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="standards__calculator">
-                  <div class="standards__calculator__range"><input type="range" id="range" value="10" step="1" min="1" max="28" data-orientation="vertical"></div>
+                  <div class="standards__calculator__range"><input type="range" id="range" value="23" step="1" min="1" max="28" data-orientation="vertical"></div>
                   <div class="standards__calculator__info">
                     <h4>Барабан №<span class="title">30а ГОСТ 5151-79</span></h4>
                     <p>Диаметр щеки (D): <span class="d">3000 </span>мм</p>
@@ -117,51 +118,51 @@
                 <p>Предприятие <span>БАРКАБ</span> изготавливает деревянные барабаны любой сложности по индивидуальному проекту </p>
               </div>
             </div>
-            <div class="col-xs-4 center-xs"><img src="img/step-1.svg"></div>
+            <div id="trigger" class="col-xs-4 center-xs"><img src="img/step-1.svg" id="animate"></div>
             <div class="col-xs-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text" class="fabrication__step">
                 <h3>Этап 1 </h3>
                 <p>Собственное производство доски.</p>
               </div>
             </div>
             <div class="col-xs-4"></div>
             <div class="col-xs-4 col-xs-offset-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text1" class="fabrication__step">
                 <h3>Этап 2</h3>
                 <p>Изготовление деревянных элементов: щёк, шеечной доски, сегментов.</p>
               </div>
             </div>
-            <div class="col-xs-4 center-xs"><img src="img/step-2.svg"></div>
-            <div class="col-xs-4 center-xs"><img src="img/step-3.svg"></div>
+            <div id="trigger1" class="col-xs-4 center-xs"><img src="img/step-2.svg" id="animate1" class="odd"></div>
+            <div id="trigger2" class="col-xs-4 center-xs"><img src="img/step-3.svg" id="animate2"></div>
             <div class="col-xs-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text2" class="fabrication__step">
                 <h3>Этап 3</h3>
                 <p>Собственное производство металлических элементов: шпилек, пластин и втулок.</p>
               </div>
             </div>
             <div class="col-xs-4"></div>
             <div class="col-xs-4 col-xs-offset-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text3" class="fabrication__step">
                 <h3>Этап 4</h3>
                 <p>Обеззараживание изделий и маркировка по стандарту ISPM 15.</p>
               </div>
             </div>
-            <div class="col-xs-4 center-xs"><img src="img/step-4.svg"></div>
-            <div class="col-xs-4 center-xs"><img src="img/step-5.svg"></div>
+            <div id="trigger3" class="col-xs-4 center-xs"><img src="img/step-4.svg" id="animate3" class="odd"></div>
+            <div id="trigger4" class="col-xs-4 center-xs"><img src="img/step-5.svg" id="animate4"></div>
             <div class="col-xs-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text4" class="fabrication__step">
                 <h3>Этап 5</h3>
                 <p>Сборка изделий, нанесение маркировки и логотипа, покраска (по запросу).</p>
               </div>
             </div>
             <div class="col-xs-4"></div>
             <div class="col-xs-4 col-xs-offset-4 center-xs">
-              <div class="fabrication__step">
+              <div id="animate-text5" class="fabrication__step">
                 <h3>Этап 6</h3>
                 <p>Доставка заказчику.</p>
               </div>
             </div>
-            <div class="col-xs-4 center-xs"><img src="img/step-6.svg"></div>
+            <div id="trigger5" class="col-xs-4 center-xs"><img src="img/step-6.svg" id="animate5" class="odd"></div>
           </div>
         </div>
       </section>
@@ -321,14 +322,23 @@
       <section class="gallery">
         <div class="swiper-container swiper-gallery">
           <div class="swiper-wrapper">
-            <div style="background-image: url(img/dsc-00434.png)" class="swiper-slide">
-              <p>Погрузка комплектов барабанов в прицеп типа «Еврофура»</p>
+            <div style="background-image: url(img/01.jpg)" class="swiper-slide">
+              <p>Барабан № 28 Д, производства «Баркаб», с намотанным кабелем Прим: Может быть лототип заказчика убрать</p>
             </div>
-            <div style="background-image: url(img/dsc-00434.png)" class="swiper-slide">
-              <p>Погрузка комплектов барабанов в прицеп типа «Еврофура»</p>
+            <div style="background-image: url(img/02.jpg)" class="swiper-slide">
+              <p>Погрузка комплектов барабанов № № 10 и 12, производства «Баркаб», в прицеп типа «ЕВРОФУРА»</p>
             </div>
-            <div style="background-image: url(img/dsc-00434.png)" class="swiper-slide">
-              <p>Погрузка комплектов барабанов в прицеп типа «Еврофура»</p>
+            <div style="background-image: url(img/03.jpg)" class="swiper-slide">
+              <p>Погрузка комплектов барабанов № № 8, 10 и 12, производства «Баркаб», в прицеп типа «ЕВРОФУРА»</p>
+            </div>
+            <div style="background-image: url(img/04.jpg)" class="swiper-slide">
+              <p>Погрузка комплектов барабанов № № 8, 10 и 12, производства «Баркаб», в прицеп типа «ЕВРОФУРА»</p>
+            </div>
+            <div style="background-image: url(img/05.jpg)" class="swiper-slide">
+              <p>Погрузка комплектов барабанов № 36Д, производства «Баркаб», на прицеп-трал (поставка 8 комплектов)</p>
+            </div>
+            <div style="background-image: url(img/06.jpg)" class="swiper-slide">
+              <p>Барабаны производства «БАРКАБ» № 10У с геофизическим кабелем на специальных поддонах, подготовленные к отгрузке</p>
             </div>
           </div>
           <div class="swiper-button-next swiper-gallery-next"><img src="img/arrow.png" alt=""></div>
@@ -468,11 +478,11 @@
               <div class="swiper">
                 <div class="swiper-container swiper-reliability">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="img/svelen.png" srcset="img/svelen@2x.png 2x, img/svelen@3x.png 3x"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="img/estralin.png" srcset="img/estralin@2x.png 2x, img/estralin@3x.png 3x"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="img/rosgeo.png" srcset="img/rosgeo@2x.png 2x, img/rosgeo@3x.png 3x"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="img/izola.png" srcset="img/izola@2x.png 2x, img/izola@3x.png 3x"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="img/sevcab.png" srcset="img/sevcab@2x.png 2x, img/sevcab@3x.png 3x"></a></div>
+                    <div class="swiper-slide"><a href="#pop-up" pop-up-link="img/svelen@2x.png" data-pop><img src="img/svelen.png" srcset="img/svelen@2x.png 2x, img/svelen@3x.png 3x"></a></div>
+                    <div class="swiper-slide"><a href="#pop-up" pop-up-link="img/estralin@2x.png" data-pop><img src="img/estralin.png" srcset="img/estralin@2x.png 2x, img/estralin@3x.png 3x"></a></div>
+                    <div class="swiper-slide"><a href="#pop-up" pop-up-link="img/rosgeo@2x.png" data-pop><img src="img/rosgeo.png" srcset="img/rosgeo@2x.png 2x, img/rosgeo@3x.png 3x"></a></div>
+                    <div class="swiper-slide"><a href="#pop-up" pop-up-link="img/izola@2x.png" data-pop><img src="img/izola.png" srcset="img/izola@2x.png 2x, img/izola@3x.png 3x"></a></div>
+                    <div class="swiper-slide"><a href="#pop-up" pop-up-link="img/sevcab@2x.png" data-pop><img src="img/sevcab.png" srcset="img/sevcab@2x.png 2x, img/sevcab@3x.png 3x"></a></div>
                   </div>
                 </div>
                 <div class="swiper-button-next swiper-reliability-next"><img src="img/arrow.png" alt=""></div>
@@ -538,8 +548,8 @@
           </div>
         </div>
       </footer>
-      <div class="pop-up">
-        <div id="menu" class="pop-up__content">
+      <div class="menu">
+        <div id="menu" class="menu__content">
           <ul>
             <li><a href="#status">Производственные мощности</a></li>
             <li><a href="#standards">Изготовление барабанов</a></li>
@@ -549,6 +559,15 @@
             <li><a href="#reliability">Надежное сотрудничество</a></li>
             <li><a href="#contacts">Контакты</a></li>
           </ul><a href="#" class="btn">Коммерческое предложение</a></div>
+      </div>
+      <div class="pop-up__bg"></div>
+      <div id="pop-up" class="pop-up">
+        <div class="pop-up__content">
+          <div class="pop-up__close"><span></span></div><img></div>
+      </div>
+      <div id="pop-up__video" class="pop-up pop-up__video">
+        <div class="pop-up__content">
+          <div class="pop-up__close"><span></span></div><iframe src=""></iframe></div>
       </div>
     </div>
     <!--END out-->

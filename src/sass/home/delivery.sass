@@ -19,10 +19,16 @@
       color: $brownish-grey
       margin-bottom: 50px
   &__truck
-    background: url('../img/page-1.png') no-repeat
-    background-size: contain
-    background-position: 50% 50%
-    width: 100vw
+    background-image: url('../img/page-1.png')
+    background-repeat: repeat-x
+    background-size: 160% 80%
+    animation: animatedBackground 15s linear infinite
+    width: 100%
+    @keyframes animatedBackground
+      0%
+        background-position: 100% 0
+      100%
+        background-position: 0% 0
     img
       width: 1160px
       position: relative

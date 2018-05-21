@@ -1,4 +1,4 @@
-.pop-up
+.menu
   display: none
   position: fixed
   top: 0
@@ -26,3 +26,67 @@
         display: inline-block
         &:hover
           text-decoration: underline
+.pop-up__bg
+  position: fixed
+  z-index: 21
+  display: block
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.7)
+  display: none
+.pop-up
+  position: fixed
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: 22
+  display: none
+  height: 100%
+  &__video
+    height: 80%
+    width: 80%
+    iframe
+      width: 100%
+      height: 100%
+  &__close
+    width: 30px
+    height: 30px
+    padding-top: 15px
+    position: absolute
+    right: 10px
+    top: 10px
+    display: inline-block
+    cursor: pointer
+    transition: all 0.3s
+    background: $pale-gold-two
+    border-radius: 50%
+    span
+      display: block
+      transition: all 0.3s
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -50%) rotate(225deg)
+        width: 20px
+        height: 2px
+        background: $crimson
+        transition: all 0.3s
+        top: 50%
+        border-radius: 20%
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -50%) rotate(315deg)
+        top: 50%
+        width: 20px
+        height: 2px
+        background: $crimson
+        transition: all 0.3s
+        border-radius: 20%
+  &__content
+    height: 100%
+    img
+      height: 100%
