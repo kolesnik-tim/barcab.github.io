@@ -34,6 +34,10 @@ a
 	position: relative
 	z-index: 5
 	transition: all 0.3s
+	+r(767)
+		padding: 10px 25px
+		padding-top: 14px
+		font-size: 24px
 	&:hover
 		background: $white
 	i
@@ -61,16 +65,30 @@ a
 		color: $crimson
 		margin-bottom: 30px
 		line-height: 1
+		+r(767)
+			font-size: 46px
 	p
 		font-size: 28px
 		line-height: 1.2
 		text-align: center
 		color: $brownish-grey
 		font-weight: normal
+		+r(767)
+			font-size: 20px
 		span
 			font-weight: bold
 	&--white
 		margin-top: 150px
+		+r(1024)
+			margin-top: 15px
+		+r(767)
+			margin-top: 200px
+			h2
+				color: $black
+			p
+				color: $black
+		+r(430)
+			margin-top: 60px
 		h2
 			color: $off-white
 		p

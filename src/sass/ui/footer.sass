@@ -3,12 +3,17 @@
   position: relative
   &__content
     padding: 50px 60px
+    +r(1024)
+      padding: 50px 10px
+      padding-top: 60px
   &__confidentiality
     p
       font-size: 14px
       letter-spacing: 0.5px
       color: $pinkish-grey
       padding-bottom: 5px
+      +r(400)
+        font-size: 12px
     a
       font-size: 14px
       letter-spacing: 0.5px
@@ -16,6 +21,9 @@
   &__logo
     display: flex
     align-items: center
+    +r(767)
+      justify-content: center
+      margin-bottom: 30px
     img
       margin-right: 30px
       width: 100px
@@ -25,6 +33,8 @@
     align-items: center
     color: $pinkish-grey
     text-align: right
+    +r(767)
+      justify-content: center
     &__text
       margin-right: 30px
       p
@@ -32,6 +42,8 @@
         letter-spacing: 0.5px
         text-align: right
         padding-bottom: 5px
+        +r(400)
+          font-size: 12px
   .up
     position: absolute
     right: 0
@@ -39,6 +51,8 @@
     transform: translate(-50%) 
     opacity: 0.3
     transition: all 0.3s
+    +r(1024)
+      top: 10px
     &:hover
       opacity: 1 
     i

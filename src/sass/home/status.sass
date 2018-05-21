@@ -4,9 +4,15 @@
   img.baraban
     position: absolute
     top: -350px
+    width: 98%
     z-index: 3
+    +r(500)
+      width: 95%
+      top: -250px
   &__block
     margin-top: 370px
+    +r(767)
+      margin-top: 0
     span
       font-family: 'PFDinTextCompPro'
       font-size: 300px
@@ -16,6 +22,12 @@
       display: inline-flex
       align-items: center
       line-height: 0.8
+      +r(767)
+        font-size: 230px
+      +r(500)
+        font-size: 153px
+        letter-spacing: -10px
+        margin-left: -20px
     b
       transform: rotate(-90deg)
       display: inline-block
@@ -27,12 +39,31 @@
       position: relative
       top: -40px
       margin-right: -100px
+      left: -100px
+      opacity: 0
+      +r(1190)
+        left: 0
+      +r(767)
+        left: -48px !important
+      +r(500)
+        font-size: 45px
+        letter-spacing: 9px
+        top: -20px
     img
       margin-top: -50px
+      position: relative
+      right: -100px
+      opacity: 0
+      +r(1190)
+        right: 0
+      +r(950)
+        display: none
     p
       font-size: 45px
       text-align: center
       color: $brownish-grey
+      +r(600)
+        font-size: 25px
 
 
 
