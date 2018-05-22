@@ -16,6 +16,7 @@ var swiper = new Swiper('.swiper-gallery', {
 
 var swiper = new Swiper('.swiper-delivery', {
   slidesPerView: 4,
+  centeredSlides: true,
   spaceBetween: 30,
   navigation: {
     nextEl: '.swiper-delivery-next',
@@ -24,12 +25,15 @@ var swiper = new Swiper('.swiper-delivery', {
   breakpoints: {
     1090: {
       slidesPerView: 3,
+      centeredSlides: true,
     },
     800: {
       slidesPerView: 2,
+      centeredSlides: true,
     },
     540: {
       slidesPerView: 1,
+      centeredSlides: true,
     },
   },
 });
