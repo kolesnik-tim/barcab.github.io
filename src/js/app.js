@@ -9,6 +9,8 @@ import './import/rangeslider.js';
 //wow
 new WOW().init();
 
+//numeral
+
 
 //header
 var lastScrollTop = 0;

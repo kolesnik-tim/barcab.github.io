@@ -18,6 +18,8 @@ var swiper = new Swiper('.swiper-delivery', {
   slidesPerView: 4,
   centeredSlides: true,
   spaceBetween: 30,
+  loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: '.swiper-delivery-next',
     prevEl: '.swiper-delivery-prev',

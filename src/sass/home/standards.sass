@@ -53,19 +53,22 @@
         width: auto
       +r(380)
         margin-left: 0
-      h4
-        font-family: 'OfficinaSansC'
-        font-size: 30px
-        font-weight: bold
-        color: $crimson
+      &__title
         margin-bottom: 20px
         min-height: 75px
-        +r(380) 
-          font-size: 25px
+        h4
+          font-family: 'OfficinaSansC'
+          font-size: 30px
+          font-weight: bold
+          color: $crimson
+          transition: all 0.3s ease-in-out
+          +r(380) 
+            font-size: 25px
       p
         font-size: 18px
         line-height: 1.33
         color: $brownish-grey
+        transition: all 0.3s ease-in-out
         +r(380)
           font-size: 15px
         span

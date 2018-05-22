@@ -24,6 +24,7 @@ function ProductSlider() {
     let barabanH = item.d / 10;
     if(+inputValue === i) {
       $('.title').text(item.title);
+      $('.title1').text(item.title1);
       $('.d').text(item.d);
       $('.l').text(item.l);
       $('.d1').text(item.d1);
