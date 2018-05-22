@@ -21,6 +21,7 @@ function ProductSlider() {
   inputValue = $('input').val();
   list.forEach(function(item, i) {
     i = i + 1;
+    let barabanH = item.d / 10;
     if(+inputValue === i) {
       $('.title').text(item.title);
       $('.d').text(item.d);
@@ -28,6 +29,7 @@ function ProductSlider() {
       $('.d1').text(item.d1);
       $('.s').text(item.s);
       $('.count').text(item.count);
+      $('.barabanH').css('height', barabanH);
     }
   });
 }

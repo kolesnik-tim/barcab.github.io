@@ -6,6 +6,9 @@ import './import/scrollmagic.js';
 import './import/rangeslider.js';
 
 
+//wow
+new WOW().init();
+
 
 //header
 var lastScrollTop = 0;
@@ -25,8 +28,17 @@ $(window).scroll(function(event) {
 
 
 //якаря
-$('#menu1, #menu').on('click','a', function(event) {
+$('#menu1, #menu, #menu2').on('click','a', function(event) {
   event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
+$('.menu2').on('click', function(event) {
+  event.preventDefault();
+  $('.menu').fadeOut();
+  $('.header').removeClass('active');
+  $('body').removeClass('modal');
   var id  = $(this).attr('href'),
     top = $(id).offset().top;
   $('body,html').animate({scrollTop: top}, 1500);

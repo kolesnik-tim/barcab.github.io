@@ -25,12 +25,15 @@
         height: 100%
         background: rgba(255, 249, 238, 0.5)
         transition: all 0.3s
+        visibility: visible
+        opacity: 1
         +r(1024)
           display: none
       &:hover
         box-shadow: 0 5px 10px 0 rgba(138, 1, 14, 0.15)
         &:before
           visibility: hidden
+          opacity: 0
   .swiper-button-next, .swiper-button-prev
     background: none
     +r(1024)
