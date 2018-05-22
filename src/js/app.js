@@ -38,6 +38,7 @@ $('.menu2').on('click', function(event) {
   event.preventDefault();
   $('.menu').fadeOut();
   $('.header').removeClass('active');
+  $('.menu-open').removeClass('active');
   $('body').removeClass('modal');
   var id  = $(this).attr('href'),
     top = $(id).offset().top;
