@@ -45,6 +45,8 @@
     position: relative
     left: 50%
     transform: translate(-50%)
+    +r(1170)
+      margin-top: 40px
     span
       display: inline-block
       font-size: 18px
@@ -52,11 +54,15 @@
       color: $warm-grey
       margin-bottom: 30px
       margin-top: 10px
+      +r(767) 
+        font-size: 11px
     p
       font-size: 30px
       line-height: 1.2
       color: $brownish-grey
       margin-bottom: 50px
+      +r(767)
+        font-size: 20px
   &__truck
     background-image: url('../img/page-1.png')
     background-repeat: repeat-x
