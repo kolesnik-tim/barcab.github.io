@@ -1,17 +1,25 @@
 .fabrication
   padding-bottom: 110px
+  +r(767)
+    margin-bottom: 0
   img
     width: 290px
     opacity: 0
     position: relative
     left: -100px
+    +r(1190)
+      left: 0
     &.odd
       left: auto
       right: -100px
+      +r(1190)
+        right: 0
   &__step
     top: -100px
     position: relative
     opacity: 0
+    +r(767)
+      margin-bottom: 60px
     h3
       font-size: 30px
       font-weight: bold
@@ -20,3 +28,5 @@
       font-size: 27px
       line-height: 1.2  
       color: $brownish-grey
+      +r(767)
+        font-size: 20px

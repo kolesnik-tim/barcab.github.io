@@ -1,22 +1,22 @@
 
 // input:focus + label
 $('input').focus(function() {
-  $(this).next().css({'font-size': '18px', 'transform': 'translateY(-50px)'});
+  $(this).next().css({'transform': 'translate(-10px, -50px)  scale(0.85)'});
 });
 $('input').blur(function() {
   if($(this).val() === '') {
-    $(this).next().css({'font-size': '30px', 'transform': 'translateY(-10px)' });
+    $(this).next().css({'transform': 'translate(0, -10px) scale(1)'});
   }
 });
 
 
 // textarea:focus + label
 $('textarea').focus(function() {
-  $(this).next().css({'font-size': '18px', 'transform': 'translateY(-40px)'});
+  $(this).next().css({'transform': 'translate(-20px, -50px)  scale(0.85)'});
 });
 $('textarea').blur(function() {
   if($(this).val() === '') {
-    $(this).next().css({'font-size': '30px', 'transform': 'translateY(-10px)' });
+    $(this).next().css({'transform': 'translate(0, -10px) scale(1)'});
   }
 });
 

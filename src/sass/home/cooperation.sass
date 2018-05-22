@@ -13,6 +13,8 @@
     font-weight: 500
     text-align: center
     color: $white
+    +r(767)
+      font-size: 45px
   .form
     display: flex
     flex-direction: column
@@ -24,6 +26,8 @@
     &__line
       width: 100%
       display: flex
+      +r(767)
+        display: inline-block
       &__file 
         position: relative
         width: 100%
@@ -45,6 +49,8 @@
           display: flex
           align-items: center
           cursor: pointer
+          +r(767)
+            font-size: 16px
           &:before
             content: '+'
             position: absolute
@@ -78,7 +84,9 @@
           bottom: 0px
           pointer-events: none
           transition: transform 100ms ease
-          transform: translateY(-10px)
+          transform: translate(0, -10px)
+          +r(767)
+            font-size: 20px
         input
           outline: none
           border-bottom: 1px solid $pinkish-grey
@@ -89,6 +97,8 @@
           font-size: 30px
           line-height: 1.2
           color: $off-white
+          +r(767)
+            font-size: 22px
           &:valid + label
             transform: translateY(-50px)
             font-size: 18px
@@ -113,6 +123,8 @@
         pointer-events: none
         transition: transform 100ms ease
         transform: translateY(-10px)
+        +r(767)
+          font-size: 20px
       textarea
         outline: none
         border-radius: 2px
@@ -126,7 +138,10 @@
         line-height: 1.2
         color: $off-white
         resize: none
+        font-size: 22px
     &__checkbox
+      width: 100%
+      position: relative
       input
         display: none
         & + label::before
@@ -139,9 +154,11 @@
           display: flex
           justify-content: center
           align-items: center
-          position: relative
+          position: absolute
           text-align: center
-          right: 10px
+          left: 0
+          top: 50%
+          transform: translate(0, -50%)
           color: $pale-gold
           +r(1024)
             position: absolute
@@ -153,10 +170,11 @@
         font-size: 17px
         line-height: 1.33
         color: $pinkish-grey
-        display: inline-flex
-        align-items: center
         cursor: pointer
+        padding-left: 40px
+        display: inline-block
+        +r(500)
+          font-size: 11.5px
         span
           color: $pale-gold
-          padding-left: 5px
     

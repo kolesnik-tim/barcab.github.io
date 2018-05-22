@@ -2,6 +2,8 @@
   position: relative
   display: flex
   align-items: center
+  +r(767)
+    display: block
   #map
     height: 500px
     width: 100%
@@ -16,6 +18,12 @@
     max-width: 380px
     width: 100%
     padding: 20px
+    +r(1024)
+      left: 0
+      max-width: 300px
+    +r(767)
+      position: relative
+      max-width: 100%
     h2
       font-size: 30px
       font-weight: bold
@@ -25,10 +33,14 @@
       font-size: 18px
       color: $pinkish-grey
       display: block
+      +r(1024)
+        font-size: 14px
     p, a
       font-size: 18px
       line-height: 1.33
       color: $brownish-grey
       display: block
       padding-bottom: 20px
+      +r(1024)
+        font-size: 14px
 

@@ -14,6 +14,26 @@ var swiper = new Swiper('.swiper-gallery', {
 });
 
 
+var swiper = new Swiper('.swiper-delivery', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-delivery-next',
+    prevEl: '.swiper-delivery-prev',
+  },
+  breakpoints: {
+    1090: {
+      slidesPerView: 3,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    540: {
+      slidesPerView: 1,
+    },
+  },
+});
+
 
 var swiper = new Swiper('.swiper-reliability', {
   slidesPerView: 4,
@@ -21,5 +41,16 @@ var swiper = new Swiper('.swiper-reliability', {
   navigation: {
     nextEl: '.swiper-reliability-next',
     prevEl: '.swiper-reliability-prev',
+  },
+  breakpoints: {
+    1090: {
+      slidesPerView: 3,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    540: {
+      slidesPerView: 1,
+    },
   },
 });

@@ -3,15 +3,27 @@
   &__content
     max-height: 360px
     margin-bottom: 50px
+    +r(767)
+      max-height: 100%
   &__calculator
     display: flex
     align-items: center
     height: 100%
+    +r(767)
+      flex-wrap: wrap
+      height: auto
+    +r(380)
+      flex-wrap: nowrap
     &__range
       position: relative
       width: 50px
       height: 100%
       padding-left: 10px
+      +r(767)
+        height: 250px
+        margin-left: 20px
+      +r(380)
+        margin-left: 0
       input[type="range"]
         width: 100% !important
       .rangeslider
@@ -37,6 +49,11 @@
       max-width: 280px
       width: 100%
       margin-left: 50px
+      +r(500)
+        margin-left: 10px
+        width: auto
+      +r(380)
+        margin-left: 0
       h4
         font-family: 'OfficinaSansC'
         font-size: 30px
@@ -44,15 +61,29 @@
         color: $crimson
         margin-bottom: 20px
         min-height: 75px
+        +r(380) 
+          font-size: 25px
       p
         font-size: 18px
         line-height: 1.33
         color: $brownish-grey
+        +r(380)
+          font-size: 15px
         span
           color: $crimson
           margin-right: 4px
   &__img
     margin-left: 80px
+    +r(850)
+      margin-left: 25px
+    +r(767)
+      margin-top: 40px
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: flex-end
+    +r(440)
+      display: none
     img
       height: 360px
       &:last-child
@@ -69,3 +100,5 @@
       color: $brownish-grey
       margin-bottom: 50px
       max-width: 970px
+      +r(767)
+        font-size: 22px

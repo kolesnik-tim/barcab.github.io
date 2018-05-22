@@ -4,16 +4,20 @@
     position: relative 
   .swiper-container
     height: 390px
-    padding: 10px 0
+    padding: 10px 10px
     .swiper-slide
       overflow: hidden
       width: 100%
       border-radius: 10px
       position: relative
       transition: all 0.3s
+      +r(1024)
+        box-shadow: 0 5px 10px 0 rgba(138, 1, 14, 0.15)
       a
         height: 100%
         width: 100%
+        display: flex
+        justify-content: center
       &:before
         content: ''
         position: absolute
@@ -21,16 +25,24 @@
         height: 100%
         background: rgba(255, 249, 238, 0.5)
         transition: all 0.3s
+        +r(1024)
+          display: none
       &:hover
         box-shadow: 0 5px 10px 0 rgba(138, 1, 14, 0.15)
         &:before
           visibility: hidden
   .swiper-button-next, .swiper-button-prev
     background: none
+    +r(1024)
+      display: none
     img
       width: 40px
   .swiper-button-prev
     left: -55px
+    +r(1270)
+      left: 10px
   .swiper-button-next
     transform: rotate(180deg)
     right: -55px
+    +r(1270)
+      right: 10px

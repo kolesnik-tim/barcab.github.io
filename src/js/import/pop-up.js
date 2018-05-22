@@ -4,6 +4,9 @@ $('.menu-open, .menu ul a').on('click', function() {
   $('.header__logo').fadeIn();
   $('.menu-open').toggleClass('active');
   $('body').toggleClass('modal');
+  if($('.header').hasClass('active')) {
+  }
+  $('.header').addClass('active');
 });
 
 //pop-up

@@ -1,6 +1,38 @@
 .delivery
   background: $off-white
   padding-bottom: 50px
+  .swiper-container
+    .swiper-slide
+      background: url('../img/page-1.svg') no-repeat
+      background-size: contain
+      background-position: 50% 50%
+      padding: 40px 0
+      h4
+        font-size: 30px
+        font-weight: bold
+        text-align: center
+        color: $crimson
+        margin-bottom: 15px
+      p
+        font-size: 18px
+        line-height: 1.28
+        text-align: center
+        color: $brownish-grey
+    .swiper-button-next, .swiper-button-prev
+      background: none
+      +r(1024)
+        display: none
+      img
+        width: 40px
+    .swiper-button-prev
+      left: -55px
+      +r(1270)
+        left: 10px
+    .swiper-button-next
+      transform: rotate(180deg)
+      right: -55px
+      +r(1270)
+        right: 10px
   &__info
     max-width: 800px
     position: relative
@@ -24,6 +56,8 @@
     background-size: 160% 80%
     animation: animatedBackground 15s linear infinite
     width: 100%
+    +r(1170)
+      display: none
     @keyframes animatedBackground
       0%
         background-position: 100% 0
@@ -38,7 +72,7 @@
       position: absolute
       &:hover
         span
-          background: url('../img/page-1.svg')
+          background: url('../img/page-2.svg')
           background-size: contain
           background-repeat: no-repeat
         .delivery__truck__block__text
