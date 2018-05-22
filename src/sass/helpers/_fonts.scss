@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'OfficeTypeSansC';
-  src: url('../fonts/OfficeTypeSansC-Bold.woff2') format('woff2'),
-      url('../fonts/OfficeTypeSansC-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'OfficinaSansC';
+  src: url('../fonts/OfficinaSansC-Book.woff2') format('woff2'),
+      url('../fonts/OfficinaSansC-Book.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OfficeTypeSansC';
-  src: url('../fonts/OfficeTypeSansC.woff2') format('woff2'),
-      url('../fonts/OfficeTypeSansC.woff') format('woff');
-  font-weight: normal;
+  font-family: 'OfficinaSansC';
+  src: url('../fonts/OfficinaSansC-Bold.woff2') format('woff2'),
+      url('../fonts/OfficinaSansC-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
 

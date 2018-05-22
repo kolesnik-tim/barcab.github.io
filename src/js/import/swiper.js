@@ -19,7 +19,6 @@ var swiper = new Swiper('.swiper-delivery', {
   centeredSlides: true,
   spaceBetween: 30,
   loop: true,
-  grabCursor: true,
   navigation: {
     nextEl: '.swiper-delivery-next',
     prevEl: '.swiper-delivery-prev',
@@ -35,7 +34,6 @@ var swiper = new Swiper('.swiper-delivery', {
     },
     540: {
       slidesPerView: 1,
-      centeredSlides: true,
     },
   },
 });
