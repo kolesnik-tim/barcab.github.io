@@ -14,6 +14,7 @@ var swiper = new Swiper('.swiper-gallery', {
 });
 
 
+
 var swiper = new Swiper('.swiper-delivery', {
   slidesPerView: 4,
   centeredSlides: true,
@@ -37,6 +38,34 @@ var swiper = new Swiper('.swiper-delivery', {
     },
   },
 });
+
+
+
+var swiper = new Swiper('.swiper-geography', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-geography-next',
+    prevEl: '.swiper-geography-prev',
+  },
+  breakpoints: {
+    1090: {
+      slidesPerView: 3,
+    },
+    850: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+
+
+
+
 
 
 var swiper = new Swiper('.swiper-reliability', {
