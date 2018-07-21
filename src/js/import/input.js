@@ -1,22 +1,53 @@
 
 // input:focus + label
 $('input').focus(function() {
-  $(this).next().css({'transform': 'translate(-10px, -50px)  scale(0.85)'});
+  $(this).closest('.form-parent').find('label').css(
+    {
+      'transform': 'translate(-10px, -50px)',
+      'font-size': '20px'
+    }
+  );
 });
 $('input').blur(function() {
   if($(this).val() === '') {
-    $(this).next().css({'transform': 'translate(0, -10px) scale(1)'});
+    $(this).closest('.form-parent').find('label').css(
+      {
+        'transform': 'translate(0, -10px)',
+        'font-size': '30px'
+      }
+    );
   }
 });
 
 
 // textarea:focus + label
 $('textarea').focus(function() {
-  $(this).next().css({'transform': 'translate(-20px, -50px)  scale(0.85)'});
+  $(this).closest('.form-parent').find('label').css(
+    {
+      'transform': 'translate(-10px, -50px)',
+      'font-size': '20px'
+    }
+  );
 });
 $('textarea').blur(function() {
   if($(this).val() === '') {
-    $(this).next().css({'transform': 'translate(0, -10px) scale(1)'});
+    $(this).closest('.form-parent').find('label').css(
+      {
+        'transform': 'translate(0, -10px)',
+        'font-size': '30px'
+      }
+    );
+  }
+});
+
+$('#checkbox').on('change', function() {
+  let label = $(this).closest('.form__checkbox').find('label');
+
+  if ($(this).is(':checked')) {
+    console.log('checekd');
+    label.addClass('active');
+  } else{
+    label.removeClass('active');
   }
 });
 

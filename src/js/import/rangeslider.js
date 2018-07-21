@@ -10,7 +10,7 @@ $('input[type="range"]').rangeslider({
 
 
 let list;
-$.getJSON('js/baraban.json', function(data) {
+$.getJSON('baraban.json', function(data) {
   list = data;
 });
 
