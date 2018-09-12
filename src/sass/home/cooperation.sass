@@ -150,8 +150,7 @@
       position: relative
       input
         display: none
-      label
-        &:before
+        & + label::before
           content: ''
           font-family: 'iconfont'
           width: 30px
@@ -170,7 +169,7 @@
           +r(1024)
             position: absolute
             left: -5px
-        &.active:before
+        &:checked + label:before
           content: '\EA03'
           align-items: center
       label

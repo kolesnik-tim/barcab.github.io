@@ -13,15 +13,19 @@ new WOW().init();
 
 
 //header
+var lastScrollTop = 0;
 $(window).scroll(function(event) {
   var st = $(this).scrollTop();
-  if(st <= 300) {
+  if (st > lastScrollTop) {   
+    $('.header').removeClass('active');
+  } else if(st <= 0) {
     $('.header').removeClass('active');
     $('.header__logo').fadeOut();
   } else {
     $('.header').addClass('active');
     $('.header__logo').fadeIn();
   }
+  lastScrollTop = st;
 });
 
 
